@@ -1,0 +1,38 @@
+<!-- Title -->
+<div class="flex items-center justify-center w-full h-full my-10">
+    <div class="w-10/12">
+        <h1 class="text-3xl lg:text-4xl font-semibold text-slate-200">Categories</h1>
+    </div>
+</div>
+
+<!-- Categories -->
+<div class="<% if(categories.length === 0) { %> hidden <% } else { %> flex <% } %> flex-col items-center justify-center w-full h-full">
+    <div class="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 mb-10">
+        <% if(typeof categories !== 'undefined' && categories.length > 0) { %>
+            <% categories.forEach((category, index) => { %>
+                <a href="/categories/<%- category.name %>">
+                    <div class="hover:opacity-50 transition duration-200 ease-linear">
+                        <img class="object-cover object-center rounded-md w-full h-72" src="/images/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+                    </div>
+                    <div class="text-center text-slate-300 text-xl font-medium mt-2"><%- category.name %></div>
+                </a>
+            <% }) %>
+        <% } %>
+    </div>
+</div>
+
+<!-- Categories filter -->
+<div class="<% if(categoryByID.length === 0) { %> hidden <% } else { %> flex <% } %> flex-col items-center justify-center w-full h-full">
+    <div class="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 mb-10">
+        <% if(typeof categoryByID !== 'undefined' && categoryByID.length > 0) { %>
+            <% categoryByID.forEach((recipe, index) => { %> 
+                <a href="/recipe/<%= recipe._id %>">
+                    <div class="hover:opacity-50 transition duration-200 ease-linear">
+                        <img class="object-cover object-center rounded-md w-full h-72" src="/uploads/<%= recipe.image %>" loading="lazy" alt="<%= recipe.name %>">
+                    </div>
+                    <div class="text-center text-slate-300 text-xl font-medium mt-2"><%= recipe.name %> </div>
+                </a>
+            <% }) %> 
+        <% } %> 
+    </div>
+</div>

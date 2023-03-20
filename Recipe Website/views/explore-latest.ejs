@@ -1,0 +1,22 @@
+<!-- Title -->
+<div class="flex items-center justify-center w-full h-full my-10">
+    <div class="w-10/12">
+        <h1 class="text-3xl lg:text-4xl font-semibold text-slate-200">Explore Latest</h1>
+    </div>
+</div>
+
+<!-- Search Results -->
+<div class="flex flex-col items-center justify-center w-full h-full">
+    <div class="w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 mb-10">
+        <% if(recipe != '') { %>
+            <% recipe.forEach((recipe, index) => { %>
+                <a href="/recipe/<%= recipe._id %>">
+                    <div class="hover:opacity-50 transition duration-200 ease-linear">
+                        <img class="object-cover object-center rounded-md w-full h-72" src="/uploads/<%= recipe.image %>" alt="<%= recipe.name %>" loading="lazy">
+                    </div>
+                    <div class="text-center text-slate-300 text-xl font-medium mt-2"><%= recipe.name %></div>
+                </a>
+            <% }) %>
+        <% } %>
+    </div>
+</div>
