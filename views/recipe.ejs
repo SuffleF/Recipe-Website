@@ -1,7 +1,7 @@
 <!-- Title -->
 <% if(recipe != null) { %>
 <div class="flex items-center justify-center w-full h-full bg-[url('/uploads/<%- recipe.image %>')] bg-cover bg-center">
-    <div class="w-full flex justify-center items-center bg-[#101116] bg-opacity-95">
+    <div class="w-full flex justify-center items-center bg-color-900 bg-opacity-95">
         <div class="w-9/12 h-full flex justify-center items-center">
             <div class="w-full">
                 <div class="flex justify-center my-10">
@@ -13,34 +13,34 @@
                 <div class="my-10">
                     <div class="flex flex-col sm:flex-row justify-center items-center w-full h-full text-slate-300">
                         <div class="w-full h-full flex flex-col">
-                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-[#323344] bg-opacity-80 text-xl font-medium rounded-tl-md rounded-tr-md sm:rounded-tr-none">
+                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-color-600 bg-opacity-80 text-xl font-medium rounded-tl-md rounded-tr-md sm:rounded-tr-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><g transform="rotate(90 12 12)"><path fill="currentColor" d="M7.5 6A1.5 1.5 0 1 0 9 7.5A1.5 1.5 0 0 0 7.5 6Zm13.62 4.71l-8.41-8.42A1 1 0 0 0 12 2H3a1 1 0 0 0-1 1v9a1 1 0 0 0 .29.71l8.42 8.41a3 3 0 0 0 4.24 0L21.12 15a3 3 0 0 0 0-4.24Zm-1.41 2.82l-6.18 6.17a1 1 0 0 1-1.41 0L4 11.59V4h7.59l8.12 8.12a1 1 0 0 1 .29.71a1 1 0 0 1-.29.7Z"/></g>
                                 </svg>
                                 <span>Category</span>
                             </span>
-                            <span class="w-full h-full text-center px-6 py-3 bg-[#323344] bg-opacity-40 text-lg  hover:bg-opacity-100 transition duration-200 ease-linear rounded-bl-none sm:rounded-bl-md">
+                            <span class="w-full h-full text-center px-6 py-3 bg-color-600 bg-opacity-40 text-lg transition duration-200 ease-linear rounded-bl-none sm:rounded-bl-md">
                                 <%- recipe.category %>
                             </span>
                         </div>
 
                         <div class="w-full h-full flex flex-col">
-                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-[#323344] bg-opacity-80 text-xl font-medium">
+                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-color-600 bg-opacity-80 text-xl font-medium">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1Z"/></g>
                                 </svg>
                                 <span>Time</span>
                             </span>
-                            <span class="w-full h-full text-center px-6 py-3 bg-[#323344] bg-opacity-40 text-lg hover:bg-opacity-100 transition duration-200 ease-linear">
+                            <span class="w-full h-full text-center px-6 py-3 bg-color-600 bg-opacity-40 text-lg transition duration-200 ease-linear">
                                 <%- recipe.time %>
                             </span>
                         </div>
 
                         <div class="w-full h-full flex flex-col rounded-r-md">
-                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-[#323344] bg-opacity-80 text-xl font-medium sm:rounded-tr-md">
+                            <span class="w-full h-full flex justify-center items-center text-center space-x-1 px-6 py-3 bg-color-600 bg-opacity-80 text-xl font-medium sm:rounded-tr-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18v-7q0-.825.588-1.413Q5.175 9 6 9t1.412.587Q8 10.175 8 11v7q0 .825-.588 1.413Q6.825 20 6 20Zm6 0q-.825 0-1.412-.587Q10 18.825 10 18V6q0-.825.588-1.412Q11.175 4 12 4t1.413.588Q14 5.175 14 6v12q0 .825-.587 1.413Q12.825 20 12 20Zm6 0q-.825 0-1.413-.587Q16 18.825 16 18v-3q0-.825.587-1.413Q17.175 13 18 13q.825 0 1.413.587Q20 14.175 20 15v3q0 .825-.587 1.413Q18.825 20 18 20Z"/>
                                 </svg>
                                 <span>Difficulty</span>
                             </span>
-                            <span class="w-full h-full text-center px-6 py-3 bg-[#323344] bg-opacity-40 text-lg rounded-br-md hover:bg-opacity-100 transition duration-200 ease-linear rounded-bl-md sm:rounded-bl-none">
+                            <span class="w-full h-full text-center px-6 py-3 bg-color-600 bg-opacity-40 text-lg rounded-br-md transition duration-200 ease-linear rounded-bl-md sm:rounded-bl-none">
                                 <%- recipe.difficulty %>
                             </span>
                         </div>

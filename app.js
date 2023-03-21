@@ -5,7 +5,6 @@ const flash = require('connect-flash')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
 const app = express()
-const path = require('path')
 
 //dotenv
 require('dotenv').config()
@@ -36,6 +35,4 @@ app.use('/', routes)
 
 
 //Server connect
-app.listen(80, () => {
-    console.log(`Server started! http://127.0.0.1:80/`)
-})
+app.listen(process.env.port, () => {console.log(`Server started! http://127.0.0.1:${process.env.port}/`)})
