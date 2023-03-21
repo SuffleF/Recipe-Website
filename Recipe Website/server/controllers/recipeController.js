@@ -226,6 +226,46 @@ DeleteRecipe()
 //                 "name": "Italian",
 //                 "image": "italian-food.jpg"
 //             },
+
+//             {
+//                 "name": "American",
+//                 "image": "american-food.jpg"
+//             },
+
+//             {
+//                 "name": "Japanese",
+//                 "image": "japanese-food.jpg"
+//             },
+
+//             {
+//                 "name": "Turk",
+//                 "image": "turk-food.jpg"
+//             },
+
+//             {
+//                 "name": "Korean",
+//                 "image": "korean-food.jpg"
+//             },
+
+//             {
+//                 "name": "Mexican",
+//                 "image": "mexican-food.jpg"
+//             },
+
+//             {
+//                 "name": "Spanish",
+//                 "image": "spanish-food.jpg"
+//             },
+
+//             {
+//                 "name": "French",
+//                 "image": "french-food.jpg"
+//             },
+
+//             {
+//                 "name": "Indian",
+//                 "image": "indian-food.jpg"
+//             },
 //         ])} 
 
 //     catch (error) {
@@ -235,16 +275,16 @@ DeleteRecipe()
 
 // insertCategoryData()
 
-//GET /categories
-//Recipes
+// GET /categories
+// Recipes
 
 // async function insertRecipeData(){
 
 //     try {
 //         await Recipe.insertMany([
 //          {
-//             "name": "Hamburger",
-//             "email": "northeater@gmail.com",
+//             "name": "Chicken Schnitzel",
+//             "email": "kebap@gmail.com",
 //             "ingredients": [
 //                 "1 pound ground lean (7% fat) beef",
 //                 "1 large egg",
@@ -268,11 +308,12 @@ DeleteRecipe()
 //                  "Fill each pepper half with some of the cheese mixture, and place on a parchment-lined rimmed baking sheet. Sprinkle the tops of the peppers evenly with the panko mixture.",
 //                  "Bake until the tops are golden brown, about 15 minutes. Remove the peppers from the oven and top them with bacon and chives."
 //                  ],
-//             "category": "American",
-//             "time": "1 Hour",
-//             "difficulty": "Medium",
-//             "image": "hamburger.jpg",
-//         },
+//             "category": "Mexican",
+//             "time": "3 Hour",
+//             "difficulty": "Hard",
+//             "image": "kebap.jpg",
+//         }, 
+//     ])}
         
 //     catch (error) {
 //         console.log('error', + error)
