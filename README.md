@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/694649301938470922/1094050377256665159/logo.png">
+<img src="https://cdn.discordapp.com/attachments/694649301938470922/1094050377256665159/logo.png?ex=66d6fb90&is=66d5aa10&hm=d7700faf23128f4f2009753e61f52cf15656979b4188d8f19d905f87adc5bb2b&">
 </p>
 
 # Recipe Website
